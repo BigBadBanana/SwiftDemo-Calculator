@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         //  ?  可选类型 optional  （只有两种情况 ： nil  或者  “正确的类型”）
         //  !  解包 （从 optional 类型中 解包出正确的类型、或者赋值为 nil ，比如上方 UILabel!   UILabel 初始化为 nil ）
         let digit : String = sender.currentTitle!
-        println("digit = \(digit)")
+        print("digit = \(digit)")
         
         if userIsInputing {
             //  拼接字符串
@@ -121,7 +121,7 @@ class ViewController: UIViewController {
     func performOperation(operation:(Double, Double) -> Double){
         
         //      函数作为参数的 用法
-        let num1 = operation(2,3)
+//        let num1 = operation(2,3)
         
         if operandStack.count >= 2 {
             displayValue = operandStack.removeLast() + operandStack.removeLast()
